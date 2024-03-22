@@ -1,0 +1,183 @@
+body {
+    background: #eeefed;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    padding-top: 25px;
+}
+
+h1 {
+    position: relative;
+    text-align: center;
+    color: #353535;
+    font-size: 50px;
+    font-family: "Calibri", sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 18px;
+    color: #676767;
+    margin-bottom: 40px;
+}
+
+.custom-btn {
+    width: 150px;
+    height: 50px;
+    color: #181818;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    position: relative;
+    display: block;
+    margin: 0 auto 20px; /* Center and add margin to stack vertically */
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+ }
+
+/* Add your custom styles for btn-1, btn-2, and btn-3 */
+.btn-1 {
+    background: rgb(5, 255, 47);
+    background: linear(0deg, rgb(91, 6, 131) 0%, rgb(180, 160, 12) 100%);
+    border: rgb(18, 3, 31);
+  }
+.btn-1:hover {
+    background: rgb(255, 0, 81);
+    background: linear-gradient(0deg, rgb(6, 93, 99) 0%, rgb(34, 230, 37) 100%);
+  }
+
+.btn-2 {
+    background: rgb(3, 66, 91);
+    background: linear-gradient(0deg, rgb(116, 49, 111) 0%, rgba(2,126,251,1) 100%);
+    width: 150px;
+    height: 50px;
+    line-height: 42px;
+    padding: 0;
+    border: none;  
+  }
+.btn-2 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+.btn-2:before,
+.btn-2:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+    background: rgb(251, 2, 139);
+    transition: all 0.4s ease;
+  }
+.btn-2:before {
+    height: 0%;
+    width: 4px;
+  }
+.btn-2:after {
+    width: 0%;
+    height: 4px;
+  }
+.btn-2:hover{
+    background: transparent;
+    box-shadow: yellow;
+  }
+.btn-2:hover:before {
+    height: 100%;
+  }
+.btn-2:hover:after {
+    width: 100%;
+  }
+.btn-2 span:hover{
+     color: red;
+  }
+.btn-2 span:before,
+.btn-2 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    background: rgb(108, 26, 101);
+    transition: all 0.3s ease;
+  }
+.btn-2 span:before {
+    width: 4px;
+    height: 0%;
+  }
+.btn-2 span:after {
+    width: 0%;
+    height: 4px;
+  }
+.btn-2 span:hover:before {
+    height: 100%;
+  }
+.btn-2 span:hover:after {
+    width: 100%;
+  }
+
+.btn-3{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+    border:none;
+    box-shadow: green;
+    width: 150px;
+    height: 50px;
+    line-height: 42px;
+    -webkit-perspective: 230px;
+    perspective: 230px
+  }
+.btn-3 span {
+    background: orange;
+    background: linear goldenrod;
+    display: block;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    margin:0;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+  }
+.btn-3 span:nth-child(1) {
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    transform: rotateX(180deg);
+    -webkit-transform-origin: 50% 50% -20px;
+    -moz-transform-origin: 50% 50% -20px;
+    transform-origin: 50% 50% -20px;
+  }
+
+.btn-3:hover span:nth-child(1) {
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transform: rotateX(0deg);
+  }
+.btn-3:hover span:nth-child(2) {
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transform: rotateX(90deg);
+  }
+  
+
+
